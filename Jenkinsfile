@@ -17,10 +17,6 @@ pipeline {
                 echo 'Deploy App'
             }
         }
-        post{
-            failure {
-                mail to : kamounemna94@gmail.com, subject :'The Pipeline failed:('
-            }
-        }
+
     }
 }
